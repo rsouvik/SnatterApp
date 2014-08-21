@@ -36,6 +36,7 @@
 		A2291C7A19A5DC260097774C /* SnAPI.m in Sources */ = {isa = PBXBuildFile; fileRef = A2291C7919A5DC260097774C /* SnAPI.m */; };
 		A2291C7D19A5DCEA0097774C /* SnSyncEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = A2291C7C19A5DCEA0097774C /* SnSyncEngine.m */; };
 		A2291C8019A5DD520097774C /* SnCoreDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2291C7F19A5DD520097774C /* SnCoreDataController.m */; };
+		A2291C8319A5DE950097774C /* NSManagedObjectJSON.m in Sources */ = {isa = PBXBuildFile; fileRef = A2291C8219A5DE950097774C /* NSManagedObjectJSON.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +91,8 @@
 		A2291C7C19A5DCEA0097774C /* SnSyncEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnSyncEngine.m; sourceTree = "<group>"; };
 		A2291C7E19A5DD520097774C /* SnCoreDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnCoreDataController.h; sourceTree = "<group>"; };
 		A2291C7F19A5DD520097774C /* SnCoreDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnCoreDataController.m; sourceTree = "<group>"; };
+		A2291C8119A5DE950097774C /* NSManagedObjectJSON.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSManagedObjectJSON.h; sourceTree = "<group>"; };
+		A2291C8219A5DE950097774C /* NSManagedObjectJSON.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NSManagedObjectJSON.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -158,6 +161,8 @@
 				A2291C7C19A5DCEA0097774C /* SnSyncEngine.m */,
 				A2291C7E19A5DD520097774C /* SnCoreDataController.h */,
 				A2291C7F19A5DD520097774C /* SnCoreDataController.m */,
+				A2291C8119A5DE950097774C /* NSManagedObjectJSON.h */,
+				A2291C8219A5DE950097774C /* NSManagedObjectJSON.m */,
 			);
 			path = SnatterApp;
 			sourceTree = "<group>";
@@ -291,6 +296,7 @@
 				A2291C7A19A5DC260097774C /* SnAPI.m in Sources */,
 				A2291C7D19A5DCEA0097774C /* SnSyncEngine.m in Sources */,
 				A2291C8019A5DD520097774C /* SnCoreDataController.m in Sources */,
+				A2291C8319A5DE950097774C /* NSManagedObjectJSON.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
