@@ -8,7 +8,7 @@
 
 #import "QAAppDelegate.h"
 
-#import "QAMasterViewController.h"
+#import "UIBaseViewController.h"
 
 @implementation QAAppDelegate
 
@@ -18,10 +18,18 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    
+    UIStoryboard *stryBoard=[UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+    self.baseViewController=[stryBoard instantiateViewControllerWithIdentifier:@"baseview"];
+    //self.mainViewController=[stryBoard instantiateViewControllerWithIdentifier:@"baseview"];
+    self.navigationController=[[UINavigationController alloc]
+                               initWithRootViewController:self.baseViewController];
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    self.window.rootViewController = self.navigationController;
     // Override point for customization after application launch.
-    UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
-    QAMasterViewController *controller = (QAMasterViewController *)navigationController.topViewController;
-    controller.managedObjectContext = self.managedObjectContext;
+    //UINavigationController *navigationController = (UINavigationController *)self.window.rootViewController;
+    //UIBaseViewController *controller = (UIBaseViewController *)navigationController.topViewController;
+    //controller.managedObjectContext = self.managedObjectContext;
     return YES;
 }
 							

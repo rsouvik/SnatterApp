@@ -8,7 +8,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface QAAppDelegate : UIResponder <UIApplicationDelegate>
+@class UIBaseViewController;
+
+@interface QAAppDelegate : UIResponder <UIApplicationDelegate, UINavigationControllerDelegate>
+
+@property (strong, nonatomic) UIBaseViewController* baseViewController;
+@property (strong, nonatomic) UINavigationController *navigationController;
 
 @property (strong, nonatomic) UIWindow *window;
 
