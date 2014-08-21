@@ -19,8 +19,9 @@
 		A2291C3A19A5CA430097774C /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A2291C3919A5CA430097774C /* Default-568h@2x.png */; };
 		A2291C3D19A5CA430097774C /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2291C3B19A5CA430097774C /* MainStoryboard.storyboard */; };
 		A2291C4019A5CA430097774C /* SnatterApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A2291C3E19A5CA430097774C /* SnatterApp.xcdatamodeld */; };
-		A2291C4319A5CA430097774C /* QAMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2291C4219A5CA430097774C /* QAMasterViewController.m */; };
-		A2291C4619A5CA430097774C /* QADetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2291C4519A5CA430097774C /* QADetailViewController.m */; };
+		A2291C4E19A5D0A70097774C /* SnQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = A2291C4D19A5D0A70097774C /* SnQuestion.m */; };
+		A2291C5119A5D0D00097774C /* SnAnswer.m in Sources */ = {isa = PBXBuildFile; fileRef = A2291C5019A5D0D00097774C /* SnAnswer.m */; };
+		A2291C5419A5D0FD0097774C /* User.m in Sources */ = {isa = PBXBuildFile; fileRef = A2291C5319A5D0FD0097774C /* User.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -40,10 +41,12 @@
 		A2291C3919A5CA430097774C /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		A2291C3C19A5CA430097774C /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
 		A2291C3F19A5CA430097774C /* SnatterApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SnatterApp.xcdatamodel; sourceTree = "<group>"; };
-		A2291C4119A5CA430097774C /* QAMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QAMasterViewController.h; sourceTree = "<group>"; };
-		A2291C4219A5CA430097774C /* QAMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QAMasterViewController.m; sourceTree = "<group>"; };
-		A2291C4419A5CA430097774C /* QADetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = QADetailViewController.h; sourceTree = "<group>"; };
-		A2291C4519A5CA430097774C /* QADetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QADetailViewController.m; sourceTree = "<group>"; };
+		A2291C4C19A5D0A70097774C /* SnQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnQuestion.h; sourceTree = "<group>"; };
+		A2291C4D19A5D0A70097774C /* SnQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnQuestion.m; sourceTree = "<group>"; };
+		A2291C4F19A5D0D00097774C /* SnAnswer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnAnswer.h; sourceTree = "<group>"; };
+		A2291C5019A5D0D00097774C /* SnAnswer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnAnswer.m; sourceTree = "<group>"; };
+		A2291C5219A5D0FD0097774C /* User.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = User.h; sourceTree = "<group>"; };
+		A2291C5319A5D0FD0097774C /* User.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = User.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,11 +98,13 @@
 				A2291C3219A5CA430097774C /* QAAppDelegate.h */,
 				A2291C3319A5CA430097774C /* QAAppDelegate.m */,
 				A2291C3B19A5CA430097774C /* MainStoryboard.storyboard */,
-				A2291C4119A5CA430097774C /* QAMasterViewController.h */,
-				A2291C4219A5CA430097774C /* QAMasterViewController.m */,
-				A2291C4419A5CA430097774C /* QADetailViewController.h */,
-				A2291C4519A5CA430097774C /* QADetailViewController.m */,
 				A2291C3E19A5CA430097774C /* SnatterApp.xcdatamodeld */,
+				A2291C5219A5D0FD0097774C /* User.h */,
+				A2291C5319A5D0FD0097774C /* User.m */,
+				A2291C4F19A5D0D00097774C /* SnAnswer.h */,
+				A2291C5019A5D0D00097774C /* SnAnswer.m */,
+				A2291C4C19A5D0A70097774C /* SnQuestion.h */,
+				A2291C4D19A5D0A70097774C /* SnQuestion.m */,
 				A2291C2A19A5CA430097774C /* Supporting Files */,
 			);
 			path = SnatterApp;
@@ -189,8 +194,9 @@
 				A2291C3019A5CA430097774C /* main.m in Sources */,
 				A2291C3419A5CA430097774C /* QAAppDelegate.m in Sources */,
 				A2291C4019A5CA430097774C /* SnatterApp.xcdatamodeld in Sources */,
-				A2291C4319A5CA430097774C /* QAMasterViewController.m in Sources */,
-				A2291C4619A5CA430097774C /* QADetailViewController.m in Sources */,
+				A2291C4E19A5D0A70097774C /* SnQuestion.m in Sources */,
+				A2291C5119A5D0D00097774C /* SnAnswer.m in Sources */,
+				A2291C5419A5D0FD0097774C /* User.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
