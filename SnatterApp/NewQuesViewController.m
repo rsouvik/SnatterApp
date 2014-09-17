@@ -7,12 +7,19 @@
 //
 
 #import "NewQuesViewController.h"
+#import "SnSyncEngine.h"
+#import "SnCoreDataController.h"
 
 @interface NewQuesViewController ()
+
+@property (nonatomic, strong) NSManagedObjectContext *managedObjectContext;
+@property (nonatomic, strong) NSManagedObject *question;
 
 @end
 
 @implementation NewQuesViewController
+
+@synthesize questionText;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,12 +34,25 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view.
+    self.managedObjectContext = [[SnCoreDataController sharedInstance] newManagedObjectContext];
+    self.question = [NSEntityDescription insertNewObjectForEntityForName:@"SnQuestion" inManagedObjectContext:self.managedObjectContext];
+	// Do any additional setup after loading the view.
+    [questionText becomeFirstResponder];
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)done:(id)sender
+{
+   // [self newpostQ];
+//	[self.delegate NewQViewControllerDidSave:self];
+    //[self loadRecordsFromCoreData];
+    //[self.tableView reloadData];
+    [[SnSyncEngine sharedEngine] startSync];
 }
 
 @end
