@@ -44,6 +44,7 @@
 		A2291CAB19B065650097774C /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2291CAA19B065650097774C /* CoreLocation.framework */; };
 		A2291CAD19B0656E0097774C /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2291CAC19B0656E0097774C /* SystemConfiguration.framework */; };
 		A2291CAF19B0657E0097774C /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2291CAE19B0657E0097774C /* MobileCoreServices.framework */; };
+		A2968D1C19C8164300DF63A9 /* NewQuesViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A2968D1B19C8164200DF63A9 /* NewQuesViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -106,6 +107,8 @@
 		A2291CAA19B065650097774C /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		A2291CAC19B0656E0097774C /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		A2291CAE19B0657E0097774C /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
+		A2968D1A19C8164200DF63A9 /* NewQuesViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NewQuesViewController.h; sourceTree = "<group>"; };
+		A2968D1B19C8164200DF63A9 /* NewQuesViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NewQuesViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -192,6 +195,8 @@
 				A2291C7F19A5DD520097774C /* SnCoreDataController.m */,
 				A2291C8119A5DE950097774C /* NSManagedObjectJSON.h */,
 				A2291C8219A5DE950097774C /* NSManagedObjectJSON.m */,
+				A2968D1A19C8164200DF63A9 /* NewQuesViewController.h */,
+				A2968D1B19C8164200DF63A9 /* NewQuesViewController.m */,
 			);
 			path = SnatterApp;
 			sourceTree = "<group>";
@@ -323,6 +328,7 @@
 				A2291C9D19B0648A0097774C /* AFURLConnectionOperation.m in Sources */,
 				A2291C9E19B0648A0097774C /* AFXMLRequestOperation.m in Sources */,
 				A2291C9F19B0648A0097774C /* UIImageView+AFNetworking.m in Sources */,
+				A2968D1C19C8164300DF63A9 /* NewQuesViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -445,6 +451,7 @@
 				A2291C4B19A5CA430097774C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
