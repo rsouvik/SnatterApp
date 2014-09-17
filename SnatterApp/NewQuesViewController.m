@@ -20,6 +20,7 @@
 @implementation NewQuesViewController
 
 @synthesize questionText;
+@synthesize managedObjectContext;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -48,10 +49,23 @@
 
 - (IBAction)done:(id)sender
 {
-   // [self newpostQ];
-//	[self.delegate NewQViewControllerDidSave:self];
+   //[self newpostQ];
+   //[self.delegate NewQViewControllerDidSave:self];
+    //add question
+    [self.question setValue:self.questionText.text forKey:@"questxt"];
+    [self.managedObjectContext performBlockAndWait:^{
+        NSError *error = nil;
+        BOOL saved = [self.managedObjectContext save:&error];
+        if (!saved) {
+            // do some real error handling
+            NSLog(@"Could not save Date due to %@", error);
+        }
+        [[SnCoreDataController sharedInstance] saveMasterContext];
+        NSLog(@"Saved data");
+    }];
     //[self loadRecordsFromCoreData];
     //[self.tableView reloadData];
+    
     [[SnSyncEngine sharedEngine] startSync];
 }
 
